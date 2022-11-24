@@ -117,3 +117,39 @@ docker images
 ```
 docker rmi 7a8965d6553e
 ```
+
+## Remove all stopped container
+
+```
+docker container prune
+```
+
+## Remove all unused images
+
+```
+docker image prune
+```
+
+## Remove a container once its stopped
+
+```
+docker run --rm 49176f190c7e
+```
+
+## image inspect
+
+```
+docker image inspect <image id>
+```
+
+## Copy a file to a container
+
+```
+docker cp test.txt practical_yalow:/test.txt
+```
+
+## Copy a file from container to local folder
+
+```
+docker cp practical_yalow:/test.txt .
+```
