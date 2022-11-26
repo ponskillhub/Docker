@@ -153,3 +153,28 @@ docker cp test.txt practical_yalow:/test.txt
 ```
 docker cp practical_yalow:/test.txt .
 ```
+
+## Naming and tagging images and containers
+
+```
+docker run -p 3000:80 --name usergivenname cf560b5ea06169ad324e3ecad880b816422eee0ae678ca8bbf4f70f92e06414b
+```
+
+### image name has two parts - name : tag
+
+```
+docker build -t goals:latest .
+```
+
+## Retagging a docker image
+
+```
+docker tag <old tag> <new tag>
+```
+
+## push a image to DockerHub
+
+```
+docker login -u "ponjagannath" -p "iampon@07091984d" docker.io
+docker push ponjagannath/pon-airflow
+```
