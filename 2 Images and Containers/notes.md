@@ -18,6 +18,8 @@ docker ps -a
 docker run -it node
 ```
 
+### to exit out of node enter .exit
+
 ## Docker file to build a image from node base image
 
 ```
