@@ -1,5 +1,7 @@
 ## Run a container
 
+### Run the node image from dockerhub
+
 ```sh
 docker run node
 ```
