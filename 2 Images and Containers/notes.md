@@ -40,7 +40,12 @@ EXPOSE 80
 
 CMD ["node", "server.js"]
 ```
+## Run a container based on an image id
 
+```
+docker run <image-id>
+
+```
 ## view the running docker containers
 
 ```
