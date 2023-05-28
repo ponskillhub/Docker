@@ -25,6 +25,7 @@ docker run -it node
 ```
 
 ## Docker file to build a image from node base image
+## Write the below to a file named Docker File
 
 ```
 FROM node
