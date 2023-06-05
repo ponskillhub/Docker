@@ -15,5 +15,3 @@ docker logout
 ponjagannath@gmail.com
 es02cs36
 ```
-
-test
