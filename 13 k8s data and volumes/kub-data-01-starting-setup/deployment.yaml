@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: story
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: story
+  template:
+    metadata:
+      labels:
+        app: story
+    spec:
+      containers:
+        - name: story
+          image: ponjagannath/kub-data-demo
+          volumeMounts:
+            - mountPath: /app/story # This is the path inside the container
+              name: story-volume
+      volumes:
+        - name: story-volume
+          emptyDir: {}
